@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<div class="header">
+    <div class="now"></div>
+    <input type="text" data-toggle="calendar"/>
+</div>
+<div class="content">
+    <div id="slide" class="slideBox">
+        <ul class="items J-items">
+            <li>
+                <a href="#" target="_blank">
+                    <img src="images/image1.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="images/image2.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="images/image3.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="images/image4.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="images/image5.jpg">
+                </a>
+            </li>
+        </ul>
+        <div class="arrows">
+            <a class="arrow-left J-arrow-left" href="javascript:;" target="_self"></a>
+            <a class="arrow-right J-arrow-right" href="javascript:;" target="_self"></a>
+        </div>
+        <div class="dots">
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <pre id="pre" data-toggle="prettify">
+         define(function(require, exports, module) {
+            var header = require('header');
+            var content = require('content');
+            var footer = require('footer');
+            header.init();
+            content.init();
+            footer.init();
+         });
+         var lottery = new Lottery({
+            $target: $("#lottery"),
+            endIndex: 7,
+            quanshu: 2,
+            callback: function (endIndex) {
+            console.log('你中了&nbsp;' + prizeArr[endIndex])
+            $( "#dialog" ).html('你中了' + prizeArr[endIndex] + '&lt;br&gt;是否现在去领奖').dialog( "open" );
+        }
+
+    </pre>
+</div>
+
+
+<script type="text/javascript" src="js/sea.js"></script>
+<script type="text/javascript" src="js/seajs-css.js"></script>
+<script>
+    // seajs 的简单配置
+    seajs.config({
+        base: "./js"
+    });
+
+    // 加载入口模块
+    seajs.use("main")
+
+</script>
+</body>
+</html>

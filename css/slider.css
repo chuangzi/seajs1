@@ -1,0 +1,52 @@
+.slideBox {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+.slideBox ul.items {
+    position: absolute;
+    width: 8000px;
+    height: 400px;
+}
+.slideBox ul.items li {
+    float: left;
+    /*position: absolute;*/
+    width: 600px;
+    height: 400px;
+    /*display: none;*/
+}
+.slideBox .arrows .arrow-left {
+    background: url(../images/sprite-arrow-prev.png) no-repeat;
+    width: 22px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 160px;
+}
+.slideBox .arrows .arrow-right {
+    background: url(../images/sprite-arrow-next.png) no-repeat;
+    width: 22px;
+    height: 32px;
+    position: absolute;
+    right: 10px;
+    top: 160px;
+}
+.slideBox .dots {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.slideBox .dots a {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #B8C0B8;
+}
+
+.slideBox .dots a.curr {
+    background: #FF8100;
+}

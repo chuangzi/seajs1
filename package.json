@@ -1,0 +1,17 @@
+{
+  "name": "seajs1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "seajs": "^3.0.2",
+    "seajs-css": "^1.0.5",
+    "jquery": "^1.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
